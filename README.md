@@ -5,21 +5,21 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/hirako2000/polybius-square-cipher">
-    <img src="images/logo.jpg" alt="Logo" width="50%">
+  <a href="https://github.com/vaizado-labs/sakasama">
+    <img src="images/sakasama-product.png" alt="Logo main" width="50%">
   </a>
 
-  <h3 align="center">Polybius Square Cipher</h3>
+  <h3 align="center">Sakasama</h3>
 
   <p align="center">
     <br />
-    <a href="https://polybius.mtassoumt.uk">View Demo</a>
+    <a href="https://sakasama.surge.sh/home.html">View Demo</a>
     .
     <a href="#About">About</a>
     ·
-    <a href="https://github.com/hirako2000/polybius-square-cipher/issues">Report Bug</a>
+    <a href="https://github.com/vaizado-labs/sakasama/issues">Report Bug</a>
     ·
-    <a href="https://github.com/hirako2000/polybius-square-cipher/issues">Request Feature</a>
+    <a href="https://github.com/vaizado-labs/sakasama/issues">Request Feature</a>
   </p>
 </div>
 
@@ -124,8 +124,8 @@ Distributed under the MIT License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[issues-shield]: https://img.shields.io/github/issues/hirako2000/polybius-square-cipher.svg?style=for-the-badge
-[issues-url]: https://github.com/hirako2000/polybius-square-cipher/issues
+[issues-shield]: https://img.shields.io/github/issues/vaizado-labs/sakasama.svg?style=for-the-badge
+[issues-url]: https://github.com/vaizado-labs/sakasama/issues
 [product-screenshot]: images/product-screenshot.png
 
 
