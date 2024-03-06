@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./styles/home.css">
+        <link rel="stylesheet" href="./styles/timeline.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="container__item landing-page-container">
+                <div class="content__wrapper">
+
+                    <header class="header">
+                        <div class="menu-icon header__item">
+                            <span class="menu-icon__line"></span>
+                        </div>
+
+                        <h1 class="heading header__item"><a href="#">Sakasama</a></h1>
+                    </header>
+
+                    <p class="coords">N 10.8231° 16' 35.173"  /  E 106.6297° 42' 11.30"</p>
+
+                    <div class="ellipses-container">
+
+                        <h2 class="greeting">Cipher</h2>
+
+                        <div class="ellipses ellipses__outer--thin">
+
+                            <div class="ellipses ellipses__orbit"></div>
+
+                        </div>
+
+                        <div class="ellipses ellipses__outer--thick"></div>
+                    </div>
+
+                    <div class="scroller">
+                        <p class="page-title">home</p>
+
+                        <div class="timeline">
+                            <span class="timeline__unit"></span>
+                            <span class="timeline__unit timeline__unit--active"></span>
+                            <span class="timeline__unit"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-container" id="timeline">
+          <div class="timeline-header">
+            <h2 class="timeline-header__title">Ciphers</h2>
+            <h3 class="timeline-header__subtitle">VISUALISATIONS</h3>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" data-text="Mid 16th century">
+              <div class="timeline__content"><img class="timeline__img" src="./images/blaise-de-vigenere.jpg"/>
+                <h2 class="timeline__content-title">Vigenère</h2>
+                <p class="timeline__content-desc">A polyalphabetic substitution cipher that was invented by Giovan Battista Bellaso, later popularized by Blaise de Vigenère in the late 16th century.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-text="80 - c. 44 BC">
+              <div class="timeline__content">
+                <a href="https://caesar-cipher-gkeb.onrender.com/">
+                  <img class="timeline__img" src="./images/ceasar-painting-ratio.jpg"/>
+                  <h2 class="timeline__content-title">Caesar cipher</h2>
+                 </a>
+                <p class="timeline__content-desc">A substitution cipher that shifts letters in a message to make it unreadable if intercepted. To decrypt, the receiver reverses the shift. Arab mathematician Al-Kindi broke the Caesar Cipher using frequency analysis, which exploits patterns in letter frequencies.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-text="200 – c. 118 BC">
+              <a href="https://polybius.mtassoumt.uk/">
+                <div class="timeline__content"><img class="timeline__img" src="./images/polybius-letters.png"/>
+                  <h2 class="timeline__content-title">Polybius square</h2>
+                  <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed woman, raised him and his sister.</p>
+                </div>
+              </a>
+            </div>
+            <div class="timeline-item" data-text="Circa 7th century BC">
+              <div class="timeline__content"><img class="timeline__img" src="./images/spartans-ratio.jpg"/>
+                <h2 class="timeline__content-title">Scytale cipher</h2>
+                <p class="timeline__content-desc">An ancient transposition cipher that was used by the Spartans, a powerful Greek city-state, for military communication. The exact date of its invention is not known, but it is believed to have been used as early as the 7th century BC..</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-text="Unknown">
+              <div class="timeline__content"><img class="timeline__img" src="images/ancient-glyph-ratio.jpg"/>
+                <h2 class="timeline__content-title">Atbash cipher</h2>
+                <p class="timeline__content-desc">A particular type of monoalphabetic cipher that replaces each letter of the alphabet with its corresponding letter in the reverse order of the alphabet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><a href="https://github.com/vaizado-labs/sakasama" target="_blank">Source</a></div>
+
+        <script src="./timeline.js"></script>
+
+    </body>
+</html>

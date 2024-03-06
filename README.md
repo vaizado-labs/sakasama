@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/hirako2000/polybius-square-cipher">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.jpg" alt="Logo" width="50%">
   </a>
 
   <h3 align="center">Polybius Square Cipher</h3>

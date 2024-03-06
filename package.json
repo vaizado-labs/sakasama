@@ -1,8 +1,8 @@
 {
-  "name": "polybius",
+  "name": "sakasama",
   "version": "0.0.1",
-  "description": "Visualisation of cryptographic ciphers",
-  "source": "src/index.html",
+  "description": "Sakasama (逆さま), Visualisation of cryptographic ciphers",
+  "source": "src/home.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel",
