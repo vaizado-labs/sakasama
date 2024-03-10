@@ -19,26 +19,35 @@ class Timeline {
   }
 
   addScrollEvent() {
+    const that = this;
     window.addEventListener("scroll", () => {
-      let min, max;
-      const windowHeight = window.innerHeight; // or whatever is the the height above the timeline
+      that.scrollEvent();
+    });
 
-      const pos = window.scrollY -(windowHeight);
+    window.addEventListener("touchmove", () => {
+      that.scrollEvent();
+    });
+  }
 
-      this.items.forEach((item, i) => {
-        min = item.offsetTop;
-        max = item.offsetTop + item.clientHeight;
+  scrollEvent() {
+    let min, max;
+    const windowHeight = window.innerHeight; // or whatever is the the height above the timeline
 
-        if (i === this.items.length - 2 && pos > min + item.clientHeight / 2) {
-          this.items.forEach(el => el.classList.remove(this.activeClass));
-          this.element.style.backgroundImage = `url(${this.items[this.items.length - 1].querySelector(this.imgSelector).src})`;
-          this.items[this.items.length - 1].classList.add(this.activeClass);
-        } else if (pos <= max - 40 && pos >= min) {
-          this.element.style.backgroundImage = `url(${item.querySelector(this.imgSelector).src})`;
-          this.items.forEach(el => el.classList.remove(this.activeClass));
-          item.classList.add(this.activeClass);
-        }
-      });
+    const pos = window.scrollY -(windowHeight);
+
+    this.items.forEach((item, i) => {
+      min = item.offsetTop;
+      max = item.offsetTop + item.clientHeight;
+
+      if (i === this.items.length - 2 && pos > min + item.clientHeight / 2) {
+        this.items.forEach(el => el.classList.remove(this.activeClass));
+        this.element.style.backgroundImage = `url(${this.items[this.items.length - 1].querySelector(this.imgSelector).src})`;
+        this.items[this.items.length - 1].classList.add(this.activeClass);
+      } else if (pos <= max - 40 && pos >= min) {
+        this.element.style.backgroundImage = `url(${item.querySelector(this.imgSelector).src})`;
+        this.items.forEach(el => el.classList.remove(this.activeClass));
+        item.classList.add(this.activeClass);
+      }
     });
   }
 }
